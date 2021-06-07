@@ -1,0 +1,155 @@
+<!doctype html>
+<html>
+<meta charset="UTF-8">
+<head>
+
+	<title>
+		Academia de Musica BEBD
+	</title>
+
+	<link rel="stylesheet" type="text/css" href="Style.css">
+	<meta name="description" content="Academia, BEBD, musica, bajo Electrico, Guitarra, Bateria, Piano, Clases musica, Talleres">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+	
+	<header>
+
+		<h1>
+			<img src="Logo.jpeg" alt="logo" width="100" height="100" align="left"> Academia de musica 
+		</h1>
+
+		<div class="container">
+
+			<div class="row justify-content-end">
+				<div class="btn-group btn-group-md">
+					<a href="index.html" class="btn btn-primary" role="button">Home</a>
+					<a href="Academia.html" class="btn btn-primary" role="button">Academia</a>
+					<a href="Talleres.html" class="btn btn-primary" role="button">Talleres</a>
+					<a href="Contacto.html" class="btn btn-primary" role="button">Contacto</a>
+
+					<div class="btn-group">
+
+						<button class="btn btn-primary dropdown-toggle" data-toggle="dropdown"> Profesores </button>
+
+						<div class="dropdown-menu">
+
+							<a href="Bajo.html" class="dropdown-item"> Bajo Electrico</a>
+							<a href="Guitarra.html" class="dropdown-item"> Guitarra</a>
+							<a href="Piano.html" class="dropdown-item"> Piano</a>
+							<a href="Bateria.html" class="dropdown-item"> Bateria</a>
+
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+
+
+		</div>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <a class="navbar-brand" href="Historia.html">Historia</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar"> 
+        <a class="navbar-brand" href="Sedes.html">Sedes</a>
+  </div>  
+</nav>
+
+<div id="mensajes">
+
+</div>
+
+<input type="text" placeholder="¿Cual es tu nombre?" id="nombre" maxlength="30">
+<input type="textarea" name="nombreContacto" id="nombre" onchange="alertaParaCambios(event)">
+
+	</header>
+
+	<br>
+
+<br>
+
+<div id="msj" style="text-align:center;">
+	<div class="image">
+	<img src="Bateria.jpg" alt="Bateria" width="15%" height="15%">
+	</div>
+	<b> $30.000</b>
+	Talleres de Bateria
+	<div class="nuevo">Taller de bateria 1 ves por semana , una hora cada clase</div>
+
+	<button onclick="agregarAlCarrito(30000)">Agregar al carrito</button>
+	<button id="mover">Descripcion</button>
+</div>
+
+<div id="msj" style="text-align:center;">
+	<div class="image">
+		<img src="Piano.jpg" alt="Piano" width="15%" height="15%">
+	</div>
+	<b> $35.000</b>
+	Taller de Piano
+	<div class="nuevo">Taller de piano 1 ves por semana , una hora cada clase</div>
+
+	<button onclick="agregarAlCarrito(35000)">Agregar al carrito</button>
+	<button id="mover">Descripcion</button>
+</div>
+
+<div id="msj" style="text-align:center;">
+	<div class="image">
+		<img src="Bajo.jpg" alt="Bajo" width="15%" height="15%">
+	</div>
+	
+	<b> $50.000</b>
+	Taller de Bajo
+	<div class="nuevo">Taller de bajo 1 ves por semana , una hora cada clase</div>
+
+	<button onclick="agregarAlCarrito(50000)">Agregar al carrito</button>
+	<button id="mover">Descripcion</button>
+</div>
+
+<div id="msj" style="text-align:center;">
+	<div class="image">
+		<img src="Guitarra.jpg" alt="Guitarra" width="15%" height="15%">
+	</div>
+	<b> $50.000</b>
+	Taller de Guitarra
+	<div class="nuevo">Taller de guitarra 1 ves por semana , una hora cada clase</div>
+
+	<button onclick="agregarAlCarrito(50000)">Agregar al carrito</button>
+	<button id="mover">Descripcion</button>
+</div>
+
+<br>
+
+<div style="text-align:center;">
+<div id="root"></div>
+<button onclick="llamarDatos()">Contacto WSP</button>
+</div>
+
+<br>
+
+<footer class="clase2">
+	Dirección: Moneda 970
+	Telefonos: 22222222 - 999999999
+
+	<ul class="nav nav-pills nav justify-content-center">
+		<li class="nav-item"><a href="https://es-la.facebook.com/" class="nav-link">Facebook</a></li>
+		<li class="nav-item"><a href="https://www.instagram.com/?hl=es-la" class="nav-link">Instagram</a></li>
+		<li class="nav-item"><a href="https://web.telegram.org/#/login" class="nav-link">Telegram</a></li>			
+	</ul>
+
+</footer>
+
+<script src="/js/main.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
